@@ -1,13 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="public/app.css" rel="stylesheet">
-    <title>Tailwindcss-app</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="public/app.css" rel="stylesheet" />
+
+  <title>Tailwindcss-app</title>
 </head>
-<body class="bg-gray-400">
-    
+
+<body class="font-body bg-gray-100">
+  <div class="bg-white ">
+    <nav class=" px-10 mx-auto py-2 md:flex  md:items-center md:justify-between">
+      <div class="flex items-center justify-between">
+        <h1><img class="h-12" src="public/images/logo.png" alt="" /></h1>
+        <button class="h-6 w-6 md:hidden" id="menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden  flex-col items-center md:flex sm: md:flex-row md:space-x-6 " id="links">
+
+        <a href="" class=" text-xl hover:text-pink-500"> Home</a>
+        <a href="" class=" text-xl hover:text-pink-500"> Service</a>
+        <a href="" class=" text-xl hover:text-pink-500"> Clients</a>
+        <a href="" class=" text-xl hover:text-pink-500"> News</a>
+        <a href="" class=" text-xl hover:text-pink-500"> Contacts</a>
+        <button class="btn">Signup</button>
+
+      </div>
+
+
+    </nav>
+  </div>
+
+  <header class="flex  flex-wrap items-center justify-between px-10 md:px-5 mx-auto my-32 text-center">
+    <div class="w-full md:w-1/2 ">
+      <img class="h-96 mx-auto" src="public/images/header.png" alt="" />
+    </div>
+
+    <div class="w-full md:w-1/2 font-sans font-thin space-y-8 mt-20 md:mt-0">
+      <h2 class="text-3xl">Multipurpose landing template</h2>
+      <h1 class="text-6xl font-bold text-primary">Beautifully</h1>
+      <h1 class="text-6xl font-bold text-primary">simple, code.</h1>
+      <h3 class="text-2xl tracking-wider">
+        Codelander is a beautifully simple, clean and lightweight landing page
+        template for all types of businesses, with bold and bright colours.
+      </h3>
+      <button class="bg-pink-500 text-white px-10 py-3 hover:bg-blue-500 rounded-full">
+        Learn More
+      </button>
+    </div>
+  </header>
+
+  <div class="services flex flex-wrap items-center justify-between mb-20 mt-10 lg:px-64 md:px-20 px-auto text-gray-600">
+    <div class="w-full md:w-1/4 mt-2 md:mt-0 flex flex-col items-center space-y-6">
+      <img src="public/images/strategy-1.png" alt="" />
+      <h2 class="text-xl text-primary">Startegy</h2>
+      <p class="font-mono font-thin">We will work with you</p>
+      <p class="font-mono font-thin">to develope tailwind apps</p>
+    </div>
+
+    <div class="w-full md:w-1/4 mt-10 md:mt-0 flex flex-col items-center space-y-6">
+      <img src="public/images/strategy-2.png" alt="" />
+      <h2 class="text-xl text-primary">Automation</h2>
+      <p class="font-mono font-thin">We will work with you</p>
+      <p class="font-mono font-thin">to develope tailwind apps</p>
+    </div>
+
+    <div class="w-full md:w-1/4 mt-10 md:mt-0 flex flex-col items-center space-y-6">
+      <img src="public/images/strategy-3.png" alt="" />
+      <h2 class="text-xl text-primary">Deplpoyment</h2>
+      <p class="font-mono font-thin">We will work with you</p>
+      <p class="font-mono font-thin">to develope tailwind apps</p>
+    </div>
+    <div class=" w-full md:w-1/4 mt-10 md:mt-0 flex flex-col items-center space-y-6">
+      <img src="public/images/strategy-4.png" alt="" />
+      <h2 class="text-xl text-primary">Education</h2>
+      <p class="font-mono font-thin">We will work with you</p>
+      <p class="font-mono font-thin">to develope tailwind apps</p>
+    </div>
+  </div>
+
+  <div class="my-20">
+    <div class="text-center">
+      <h1 class="text-4xl text-primary">Pricing</h1>
+      <p class="font-mono font-thin text-sm">
+        Offer multiple packages or monthly subscriptions? Why not showcase
+        your
+      </p>
+
+      <p class="font-mono font-thin text-sm">
+        featured price plans here, bold and beautifully.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-3 container px-10 md:px-32 sm:grid-cols-1 mx-auto my-10">
+      <div class="bg-white rounded-3xl  mt-10 hover:shadow-2xl p-5 text-center mx-auto">
+        <h1 class="text-5xl text-primary">$199</h1>
+        <h2 class="text-blue-400">Basic</h2>
+        <p class="my-4">Starter plan with all the basics included</p>
+        <ul class="font-sm font-mono space-y-4">
+          <li class="flex items-center">
+            <div class="mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current text-blue-500 h-8">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>Core Business System</div>
+          </li>
+          <li class="flex items-center">
+            <div class="mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current text-blue-500 h-8">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>Team Management</div>
+          </li>
+          <li class="flex items-center">
+            <div class="mr-3">
+              <?xml version="1.0"?>
+              <svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                class="fill-current h-8 text-gray-200">
+                <circle cx="60" cy="60" r="50" />
+              </svg>
+            </div>
+            <div>Dual Infrastructure</div>
+          </li>
+
+          <li class="flex items-center">
+            <div class="mr-3">
+              <?xml version="1.0"?>
+              <svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                class="fill-current h-8 text-gray-200">
+                <circle cx="60" cy="60" r="50" />
+              </svg>
+            </div>
+            <div>Customized Features</div>
+          </li>
+          <button class="btn">Enquire</button>
+        </ul>
+      </div>
+
+      <div
+        class="bg-white rounded-3xl h-128  hover:shadow-2xl border-8 p-5 text-center border-blue-400 border-dashed mx-auto">
+        <h1 class="text-5xl text-primary">$599</h1>
+        <h2 class="text-blue-400">Growth</h2>
+        <p class="my-4">Starter plan with all the basics included</p>
+        <ul class="font-sm font-mono space-y-4">
+          <li class="flex items-center">
+            <div class="mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current text-blue-500 h-8">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>Core Business System</div>
+          </li>
+          <li class="flex items-center">
+            <div class="mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current text-blue-500 h-8">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>Team Management</div>
+          </li>
+          <li class="flex items-center">
+            <div class="mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current text-blue-500 h-8">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>Team Management</div>
+          </li>
+          <li class="flex items-center">
+            <div class="mr-3">
+              <?xml version="1.0"?>
+              <svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                class="fill-current h-8 text-gray-200">
+                <circle cx="60" cy="60" r="50" />
+              </svg>
+            </div>
+            <div>Dual Infrastructure</div>
+          </li>
+
+          <li class="flex items-center">
+            <div class="mr-3">
+              <?xml version="1.0"?>
+              <svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                class="fill-current h-8 text-gray-200">
+                <circle cx="60" cy="60" r="50" />
+              </svg>
+            </div>
+            <div>Customized Features</div>
+          </li>
+          <button class="btn">Enquire</button>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-3xl   mt-10 hover:shadow-2xl p-5 text-center mx-auto">
+        <h1 class="text-5xl text-primary">$1299</h1>
+        <h2 class="text-blue-400">Cooperate</h2>
+        <p class="my-4">Starter plan with all the basics included</p>
+        <ul class="font-sm font-mono space-y-4">
+          <li class="flex items-center">
+            <div class="mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current text-blue-500 h-8">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>Core Business System</div>
+          </li>
+          <li class="flex items-center">
+            <div class="mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current text-blue-500 h-8">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>Team Management</div>
+          </li>
+          <li class="flex items-center">
+            <div class="mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current text-blue-500 h-8">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>Team Management</div>
+          </li>
+          <li class="flex items-center">
+            <div class="mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current text-blue-500 h-8">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>Team Management</div>
+          </li>
+          <li class="flex items-center">
+            <div class="mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current text-blue-500 h-8">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div>Team Management</div>
+          </li>
+
+          <button class="btn">Enquire</button>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer  bg-primary text-white px-10 md:px-5 py-20 px-auto ">
+    <div class="flex flex-wrap items-center justify-between   text-left">
+      <div class="w-full md:w-1/4 my-4 text-center">
+        <h1 class="text-4xl">Code</h1>
+        <p class="font-mono font-thin text-sm mt-3">A beautiful landing page template by Codefest.</p>
+      </div>
+
+      <div class="w-full md:w-1/4 my-4 text-center">
+        <h1 class="text-4xl">About</h1>
+        <p class="font-mono font-thin text-sm mt-3">A beautiful landing page template by Codefest.</p>
+      </div>
+
+      <div class="w-full md:w-1/4 my-4 text-center">
+        <h1 class="text-4xl">Contact us</h1>
+        <p class="font-mono font-thin text-sm mt-3">A beautiful landing page template by Codefest.</p>
+      </div>
+
+      <div class="w-full md:w-1/4 my-4 text-center">
+        <h1 class="text-4xl">Social</h1>
+        <p class="font-mono font-thin text-sm mt-3">A beautiful landing page template by Codefest.</p>
+      </div>
+
+    </div>
+
+    <div>
+      <p class="mt-32 text-center font-mono font-thin text-xs">© 2020 Bassil ali. All Rights Reserved.</p>
+    </div>
+  </div>
+  <script>
+    menu = document.getElementById('menu')
+    links = document.getElementById('links')
+
+    menu.addEventListener('click', function (e) {
+      e.preventDefault()
+
+      links.classList.toggle('flex')
+      links.classList.toggle('hidden')
+    })
+  </script>
 </body>
+
 </html>
